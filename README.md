@@ -49,4 +49,4 @@ And More
 ==========
 If you want its APIs,you can see `easy-indexeddb.d.ts`.It can be understand easily and quickly.
 
-**If you like it,please give a star.Thans**
+**If you like it,please give a star.Thanks**
