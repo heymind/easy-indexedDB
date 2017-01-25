@@ -1,0 +1,31 @@
+{
+  "name": "easy-indexeddb",
+  "version": "1.0.0",
+  "description": "Easy-indexedDB provides some useful helper functions by monkey patching.",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "jasmine": "^2.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heymind/easy-indexedDB.git"
+  },
+  "keywords": [
+    "indexeddb",
+    "promise-like",
+    "typescript"
+  ],
+  "author": "Heymind",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heymind/easy-indexedDB/issues"
+  },
+  "homepage": "https://github.com/heymind/easy-indexedDB#readme"
+}
