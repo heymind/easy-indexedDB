@@ -1,5 +1,10 @@
-'use strict';
-(function() {
+(function (global, factory) {
+    typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+        typeof define === 'function' && define.amd ? define(factory) :
+            (global.easyIndexedDB = factory());
+}(this, (function () { 'use strict';
+
+
     window.IDBRequest.prototype.then = function(onFulfilled, onRejected) {
         return new Promise((resolve, reject) => {
                 if (this.readyState == 'done') {
@@ -61,4 +66,5 @@
     window.IDBObjectStore.prototype.walkKeyCursor = _walkCursorNoValue;
     window.IDBIndex.prototype.walkCursor = _walkCursorWithValue;
     window.IDBIndex.prototype.walkKeyCursor = _walkCursorNoValue;
-})();
+    return 2;
+})));

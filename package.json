@@ -1,13 +1,17 @@
 {
   "name": "easy-indexeddb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy-indexedDB provides some useful helper functions by monkey patching.",
   "main": "index.js",
+  "typings": "easy-indexeddb.d.ts",
   "directories": {
     "example": "example"
   },
+  "files": [
+    "index.js",
+    "easy-indexeddb.d.ts"
+  ],
   "dependencies": {
-    "jasmine": "^2.5.3"
   },
   "devDependencies": {},
   "scripts": {
