@@ -1,6 +1,6 @@
 {
   "name": "easy-indexeddb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Easy-indexedDB provides some useful helper functions by monkey patching.",
   "main": "index.js",
   "typings": "easy-indexeddb.d.ts",
