@@ -20,11 +20,15 @@
         const requestStore = () => this.transaction([storeName], mode).objectStore(storeName);
 
         return new Proxy(IDBObjectStore, {
-                get: (target, name) => function() {
+            get: (target, name) => {
                 const store = requestStore();
-                return store[name].apply(store, arguments);
+                if (store[name]) {
+                    return function () {
+                        return store[name].apply(store, arguments);
+                    }
+                } else return undefined;
             }
-    });
+        });
     };
 
     function _walkCursor(c, walkFn) {
